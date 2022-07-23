@@ -1,0 +1,24 @@
+h1 {
+    color: rgb(240,96,204);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+
+p {
+    
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+
+} 
+
+
+body
+{
+    background-image: url("colibri.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat; /* Le fond ne sera pas répété */
+    background-position: top right; /* Le fond sera placé en haut à droite */
+    background-size: 150px;
+}
