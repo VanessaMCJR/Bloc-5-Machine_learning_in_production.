@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <title>My Flask website</title>
+  <meta charset="utf-8"/> 
+  
+
+</head>
+
+<body>
+
+    {% extends "layout.html" %}
+    {% block content %}
+
+    <div>
+    
+
+        <h1>API Documentation on wine quality prediction</h1>
+
+        <h2>Endpoints</h2>
+
+        <h3>POST /prediction</h3>
+
+        <p>This endpoint allows you to make a prediction of the quality score (from 0 to 10) of multiple wines or one wine according to the physicochemical inputs.</p>
+       
+        <h4>How to request this endpoint?</h4>
+
+        <p>You should request this endpoint using a POST method with a JSON content. Your JSON should contain at least "input" key 
+          with a list or several lists of values (float).</p>
+
+
+        <p>This list is a list of the physicochemical characteristics of the wine in the following order:</p>
+
+          <p>['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar',
+            'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density',
+            'pH', 'sulphates', 'alcohol'] </p> 
+
+          <p>Prediction for a wine:</p>
+
+          <p>Example:</p>
+            
+          <pre>
+
+          <code>
+            
+          import requests
+
+          response = requests.post("https://api-wine-quality-prediction.herokuapp.com/predict", json= {"input": [[7.0, 0.27, 0.36, 20.7, 0.045, 45.0, 170.0, 1.001, 3.0, 0.45, 8.8]]})
+          print(response.json())
+
+          {'predict': [6.0]}
+
+          </code>
+          </pre>
+
+
+          <p>Prediction for several wines:</p>
+
+          <p>Example:</p>
+            
+          <pre> 
+          <code>
+          
+          import requests
+
+
+          input_multiple = {
+
+              "input": [[7.0, 0.27, 0.36, 20.7, 0.045, 45.0, 170.0, 1.001, 3.0, 0.45, 8.8],
+                     [11.8, 0.23, 0.38, 11.1, 0.034, 15.0, 123.0, 0.9997, 2.93, 0.55, 9.7],
+                        [5.0, 0.98, 0.32, 18.9, 0.050, 75.0, 122.0, 0.401, 3.1, 0.21, 1.2],
+                       [8.6, 0.42, 0.39, 1.8, 0.068, 6.0, 12.0, 0.99516, 3.35, 0.69, 11.7],
+                        [5.0, 0.98, 0.32, 18.9, 0.050, 75.0, 122.0, 0.401, 3.1, 0.21, 1.2]]
+          }      
+          
+          
+          url = "https://api-wine-quality-prediction.herokuapp.com/predict"
+
+          
+          reponse = requests.post(url, json=input_simple)
+          assert reponse.status_code == 200
+          print(reponse.json())
+            
+          {'predict': [6.0, 3.0, 6.0, 8.0, 6.0]}
+
+          </code>
+
+
+          </pre>
+
+
+
+
+
+        
+    
+       
+      </div>
+
+      {% endblock %}
+</body>
+  
+
+  
+</html>
