@@ -78,7 +78,7 @@
           url = "https://api-wine-quality-prediction.herokuapp.com/predict"
 
           
-          reponse = requests.post(url, json=input_simple)
+          reponse = requests.post(url, json=input_multiple)
           assert reponse.status_code == 200
           print(reponse.json())
             
