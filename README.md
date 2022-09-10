@@ -15,12 +15,14 @@ Donc, j'ai utilisé le fichier Model_training.ipynb créer par l'équipe de data
 
 Ensuite, à l'aide fichier app.py, j'ai développé une application web grâce framework Flask, qui est capable de prendre en entrée les caractéristiques physico-chimiques d'un ou plusieurs vins sous la forme suivante : 
 
-'import requests
+import requests
 
 response = requests.post("https://api-wine-quality-prediction.herokuapp.com/predict", json={
     "input": [[7.0, 0.27, 0.36, 20.7, 0.045, 45.0, 170.0, 1.001, 3.0, 0.45, 8.8]]
 })
-print(response.json())'
+
+
+print(response.json())
 
 
 Et enfin, grâce à ce même fichier app.py de faire la prédiction suite à l'entrée des données. En effet, app.py est capable de charger ou d'utiliser le modèle de machine learning grâce au fichier model.joblib.
