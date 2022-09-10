@@ -18,19 +18,18 @@ Ensuite, à l'aide fichier app.py, j'ai développé une application web grâce f
 `import requests`
 
 `response = requests.post("https://api-wine-quality-prediction.herokuapp.com/predict", json={
-    "input": [[7.0, 0.27, 0.36, 20.7, 0.045, 45.0, 170.0, 1.001, 3.0, 0.45, 8.8]]
-})`
+    "input": [[7.0, 0.27, 0.36, 20.7, 0.045, 45.0, 170.0, 1.001, 3.0, 0.45, 8.8]]})`
 
-`je suis du code`
 
-print(response.json())
+
+`print(response.json())`
 
 
 Et enfin, grâce à ce même fichier app.py de faire la prédiction suite à l'entrée des données. En effet, app.py est capable de charger ou d'utiliser le modèle de machine learning grâce au fichier model.joblib.
 
 Exemple:
 
-{"predict": [6.0]}
+`{"predict": [6.0]}`
 
 
 Par ailleurs, il y a aussi le fichier requirements.txt qui contient toutes les librairies nécessaire au bon fonctionnement de l'application.
