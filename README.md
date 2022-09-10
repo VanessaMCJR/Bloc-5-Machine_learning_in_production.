@@ -11,9 +11,9 @@ Une équipe de data-science a travaillé ensemble pour créer le meilleur modèl
 
 A ce stade du projet, mon travail consiste à mettre le modèle en production.
 
-Donc, j'ai utilisé le fichier Model_training.ipynb créer par l'équipe de data-science dans le but de générer un fichier joblib qui se nomme "model.joblib".
+Donc, j'ai utilisé le fichier **Model_training.ipynb** créer par l'équipe de data-science dans le but de générer un fichier joblib qui se nomme **"model.joblib"**.
 
-Ensuite, à l'aide fichier app.py, j'ai développé une application web grâce framework Flask, qui est capable de prendre en entrée les caractéristiques physico-chimiques d'un ou plusieurs vins sous la forme suivante : 
+Ensuite, à l'aide fichier **app.py**, j'ai développé une application web grâce framework Flask, qui est capable de prendre en entrée les caractéristiques physico-chimiques d'un ou plusieurs vins sous la forme suivante : 
 
 `import requests`
 
@@ -32,16 +32,16 @@ Exemple:
 `{"predict": [6.0]}`
 
 
-Par ailleurs, il y a aussi le fichier requirements.txt qui contient toutes les librairies nécessaire au bon fonctionnement de l'application.
+Par ailleurs, il y a aussi le fichier **requirements.txt** qui contient toutes les librairies nécessaire au bon fonctionnement de l'application.
 
-Et le "dossier templates" a tout le code html qui est une petite documentation permettant aux utilisateurs de savoir comment utiliser l'application accessible directement :
+Et le **"dossier templates"** a tout le code html qui est une petite documentation permettant aux utilisateurs de savoir comment utiliser l'application accessible directement :
 "https://api-wine-quality-prediction.herokuapp.com"
 
-Et le dossier "static" permet d'ajouter du style css au code html.
+Et le dossier **"static"** permet d'ajouter du style css au code html.
 
-Et le fichier Procfile permet d'indiquer à l'hébergeur qui est heroku (choisit ici) qu'il s'agit d'une application web.
+Et le fichier **Procfile** permet d'indiquer à l'hébergeur qui est heroku (choisit ici) qu'il s'agit d'une application web.
 
-Au final on retrouve le fichier Test_Endpoint.ipynb qui permet de tester l'application web.
+Au final on retrouve le fichier **Test_Endpoint.ipynb** qui permet de tester l'application web.
 
 
 
