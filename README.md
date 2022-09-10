@@ -15,9 +15,9 @@ Donc, j'ai utilisé le fichier Model_training.ipynb créer par l'équipe de data
 
 Ensuite, à l'aide fichier app.py, j'ai développé une application web grâce framework Flask, qui est capable de prendre en entrée les caractéristiques physico-chimiques d'un ou plusieurs vins sous la forme suivante : 
 
-`import requests
+`import requests`
 
-response = requests.post("https://api-wine-quality-prediction.herokuapp.com/predict", json={
+`response = requests.post("https://api-wine-quality-prediction.herokuapp.com/predict", json={
     "input": [[7.0, 0.27, 0.36, 20.7, 0.045, 45.0, 170.0, 1.001, 3.0, 0.45, 8.8]]
 })`
 
