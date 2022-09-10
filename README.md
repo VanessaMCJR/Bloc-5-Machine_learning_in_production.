@@ -39,7 +39,9 @@ Et le **"dossier templates"** a tout le code html qui est une petite documentati
 
 Et le dossier **"static"** permet d'ajouter du style css au code html.
 
-Et le fichier **Procfile** permet d'indiquer à l'hébergeur qui est heroku (choisit ici) qu'il s'agit d'une application web.
+Et le fichier **Procfile** permet d'indiquer à l'hébergeur qui est heroku (choisit ici) qu'il s'agit d'une application web et le type de serveur web (gunicorn) utilisé.
+
+Et le fichier **wsgi.py** est un pont de communication entre le fichier **Procfile** (le type serveur web) et le fichier **app.py** (contenant notre application web).
 
 Au final on retrouve le fichier **Test_Endpoint.ipynb** qui permet de tester l'application web.
 
