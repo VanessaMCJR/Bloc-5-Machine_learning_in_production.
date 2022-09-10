@@ -25,7 +25,7 @@ Ensuite, à l'aide fichier **app.py**, j'ai développé une application web grâ
 `print(response.json())`
 
 
-Et enfin, grâce à ce même fichier app.py de faire la prédiction suite à l'entrée des données. En effet, app.py est capable de charger ou d'utiliser le modèle de machine learning grâce au fichier model.joblib.
+Et enfin, grâce à ce même fichier **app.py** de faire la prédiction suite à l'entrée des données. En effet, app.py est capable de charger ou d'utiliser le modèle de machine learning grâce au fichier **model.joblib** (ici qui est stocké dans le dossier compressé *model.zip*).
 
 Exemple:
 
