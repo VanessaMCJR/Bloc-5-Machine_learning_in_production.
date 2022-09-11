@@ -2,7 +2,7 @@
 
 ## Vidéo de presentation de mon projet: 
  
- Lien url: https://share.vidyard.com/watch/3pcPDJKRSWXh3WQXCCEmjU?
+ *Lien url*: https://share.vidyard.com/watch/3pcPDJKRSWXh3WQXCCEmjU?
 
 Wine quality prediction
 
